@@ -1,0 +1,391 @@
+:root {
+    --primary-color:rgb(241, 8, 97);
+    --color-white: #fff;
+    --color-black: rgb(46, 38, 24);
+  }
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  
+  /* utility  */
+  .container {
+    padding: 0 5%;
+  }
+  
+  a {
+    color: var(--color-white);
+    text-decoration: none;
+  }
+  
+  p {
+    color: var(--color-black);
+    font-size: 1rem;
+  }
+  
+  .heading-primary {
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 1;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .heading-secondary {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+  }
+  
+  .heading-tertiary {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: .5rem;
+  }
+  /* header  */
+  header {
+    height: 6vh;
+    display: flex;
+  }
+  
+  .main-nav {
+    width: 100%;
+    padding-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(#ff512f, #dd2476);
+  }
+  
+  .main-nav ul,
+  .sub-nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .main-nav ul li a {
+    text-transform: capitalize;
+    padding-right: 2rem;
+  }
+  
+  .logo {
+    width: 20%;
+  }
+  
+  .sub-nav {
+    width: 30%;
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+  }
+  
+  .sub-nav ul li a {
+    color: var(--primary-color);
+    padding-left: 1.5rem;
+  }
+  
+  .sub-nav ul li a:hover{
+    color: #ff42a1;
+  }
+  /* hero  */
+  .hero {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .content {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-right: 1rem;
+  }
+  
+  .hero-img {
+    flex: 0 0 50%;
+  }
+  
+  .hero-img img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    padding: 0.5rem 1.5rem;
+    margin-top: 4rem;
+  }
+  
+  .btn:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  /* services  */
+  .description {
+    height: 50vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .cards {
+    display: inline-block;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  .card {
+    margin-bottom: 2rem;
+  }
+  
+  .card .icon img {
+    width: 6rem;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+  /* .contact-form */
+
+  .contact-form form {
+    width: 80%;
+  }
+  
+  .contact-form .row {
+    width: 100%;
+    display: flex;
+  }
+  
+  .input50 {
+    width: 50%;
+    margin: 0 10px;
+  }
+  
+  .input100 {
+    width: 100%;
+    margin: 0 10px;
+  }
+  
+  .contact-form .row input,
+  .contact-form .row textarea {
+    font-size: 0.9rem;
+    font-weight: 300;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: var(--color-black);
+    padding: 10px;
+    outline: none;
+    margin: 10px 0;
+  }
+  
+  .contact-form .row textarea {
+    height: 150px;
+  }
+  
+  .contact-form .row input[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    border: 0;
+    cursor: pointer;
+  }
+
+  @media(max-width:950px) {
+    .hero-img,
+    .sub-nav {
+      display: none;
+    }
+  
+    .content {
+      flex: 0 0 100%;
+    }
+  
+    .main-nav {
+      width: 100%;
+    }
+  
+    .contact-form form {
+      width: 100%;
+    }
+  
+    .contact-form .row {
+      flex-direction: column;
+    }
+  
+    .contact-form .input100,
+    .contact-form .input50 {
+      width: 100%;
+    }
+  }
+  .nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 10px;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: poppins;
+    width: 100px;
+    padding: 10px;
+    font-size: 15px;
+
+}
+.nav-area li a:hover{
+    background: rgb(255, 255, 255);
+    color: #333;
+}
+
+/* education */
+
+.description {
+  height: 50vh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cards {
+  display: block;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.card {
+  margin-bottom: 2rem;
+}
+
+.card .icons img {
+  width: 6rem;
+  height: auto;
+  margin-bottom: 3rem;
+}
+
+.education{
+  text-align: start;
+}
+
+.education li{
+  font-size: 20px;
+  padding: 10px;
+}
+.education h1{
+  font-size: 30px;
+}
+
+.education img{
+  width: 500px;
+  float: right;
+  margin-left: 100px;
+}
+
+/* product */
+
+.description {
+  height: 50vh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading{
+  font-size: 30px;
+  margin-top: 1500px;
+}
+.heading{
+  text-align: start;
+}
+
+.heading li{
+  font-size: 20px;
+  padding: 10px;
+}
+.heading h1{
+  font-size: 30px;
+}
+
+.heading img{
+  width: 500px;
+  float: right;
+  margin-left: 100px;
+}
+.heading h2{
+  font-size: 30px;
+}
+.heading h1{
+  font-size: 40px;
+  color: #f10861;
+}
+
+/* intouch */
+
+.flex{
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+}
+
+.flex .box{
+  width: 500px;
+  height: 300px;
+  background: linear-gradient(purple , red);
+  color: white;
+  font-size: 25px;
+  line-height: 20px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.box1{
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.box1 .box2{
+  width: 500px;
+  height: 300px;
+  background: linear-gradient(purple , red);
+  color: white;
+  font-size: 25px;
+  line-height: 20px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+/* solutions */
+
+.container th{
+  padding: 40px;
+  margin: 30px;
+}
+

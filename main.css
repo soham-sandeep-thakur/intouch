@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+header{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(blo.png);
+    height: 100vh;
+    -webkit-backgroud-size:cover;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    }
+    
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: poppins;
+    width: 100px;
+    padding: 10px;
+    font-size: 20px;
+}
+.nav-area li a:hover{
+    background: rgb(255, 255, 255);
+    color: #333;
+}
+.logo img{
+    width: 20%;
+    float: left;
+    height: auto;
+}
+.welcome-text{
+    position: absolute;
+    width: 30%;
+    height: 150px;
+    margin: 20% 30%;
+    text-align: center;
+}
+.welcome-text h1{
+    text-align: center;
+    color: #fff;
+    text-transform: none;
+    font-size: 60px;
+}
+.welcome-text a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+.welcome-text a:hover{
+    background: #fff;
+    color: #333;
+} 
+
+.in{
+    margin-left: 50%;
+
+}
+/* paragraph */
+
+.container {
+    padding: 0 5%;
+  }
+  
+  a {
+    color: var(--color-white);
+    text-decoration: none;
+  }
+  
+  p {
+    color: var(--color-black);
+    font-size: 1.1rem;
+  }
+  
+.heading-primary {
+    font-size: 200%;
+    font-weight: 300%;
+    line-height: 1;
+    color: var(--primary-color);
+    margin-bottom: 20%;
+  }
+
+.hero {
+    height: calc(100vh - 10vh);
+    display: flex;
+    justify-content: space-between;
+  }
+
+.content {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-right: 40%;
+  }
+
+/* para */
+
+.content1{
+    align-content: center;
+    width: 900px;
+    height: auto;
+    margin: 20px;
+    position: sticky;
+}
+
+.content1 h2{
+    text-align: start;
+}
+
+.content1{
+    display: flex;
+}
+
+.fitem{
+    backface-visibility: hidden;
+    margin: 12px;
+    margin-top: 15%;
+    width: 8000px;
+    height: 300px;
+    border-radius: 20px;
+    transform: translatex(-550px);
+    color: #fff;
+}
+
+.h{
+    position: absolute;
+    margin-top: 40px;
+    display: block;
+    float: left;
+    left: 10px;
+    transform: translatex(-500px);
+}
+
+.h h2{
+    font-size: xx-large;
+    color: #fff;
+
+}
